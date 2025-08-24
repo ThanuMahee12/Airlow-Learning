@@ -1,0 +1,10 @@
+version: '3'
+
+services:
+  learn-airflow:
+    image: learn-airflow:latest
+    volumes:
+      - .airflow:/opt/airflow
+    ports:
+      - "8080:8080"
+    command: airflow standalone
