@@ -12,6 +12,14 @@ Apache Airflow is an open-source platform for developing, scheduling, and monito
    ```bash
    docker build --pull --rm -f 'DockerFile' -t 'learn-airflow:latest' '.'
    ```
+- Build Docker Compose
+  ```bash 
+  docker compose -f 'Docker-Compose.yml' up -d --build 
+  ```
+- web ui is scussfully open `http://localhost:8080/`
+  password can see in `C:\Users\thanu\Downloads\Airlow-Learning\.airflow\simple_auth_manager_passwords.json.generated`
+  
+  ![webUi](/asserts/docs/AirflowWebui.png)
 ## Resources
 
 - [YouTube Playlist: Apache Airflow Tutorials](https://youtube.com/playlist?list=PLc2EZr8W2QIAI0cS1nZGNxoLzppb7XbqM&si=Whc3yNa4Co_XwXC4)
